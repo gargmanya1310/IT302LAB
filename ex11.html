@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+</head>
+<body bgcolor="lightyellow">
+    <h1>
+        Product Feedback
+    </h1>
+    <table>
+        <form name="feedback" mehtod="get" action="ex9_Home.html">
+            <tr>
+                <td>
+                    <label for="uname">Full Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="uname" placeholder="Enter full name" required minlength="4" maxlength="10"/>
+                </td>
+            </tr>   
+            <tr>
+                <td>
+                      <label for="perfrom">Performance:</label> 
+                </td>
+                <td>
+                    <input type="radio" name="perform" value="0" />Poor       
+                    <input type="radio" name="perform" value="1"/>Average
+                    <input type="radio" name="perform" value="2"/>Good
+                </td>
+            </tr>
+            <tr>
+                <td>
+                      <label for="cost">Affordability:</label> 
+                </td>
+                <td>
+                    <input type="checkbox" name="cost" value="0" />Expensive      
+                    <input type="checkbox" name="cost" value="0" />Affordable       
+                </td>
+            </tr>
+            <tr>
+                <td>
+                      <label for="eff">Efficiency:</label> 
+                </td>
+                <td>
+                    <select name="eff" size="1" >
+                        <option value="3">Vey High</option>
+                        <option value="2">High</option>
+                        <option value="1">Low</option>
+                        <option value="0">Very Low</option>
+                    </select>           
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="fb">Feedback:</label>
+                </td>
+                <td>
+                    <textarea name="fb" id="" cols="40" rows="4" placeholder="How can we improve..."></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset">
+                </td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Form</title>
+</head>
+<body bgcolor="lightblue">
+    <h1>
+        Registeration Form
+    </h1>
+
+    <form name="regForm" method="get" action="ex9_Home.html">
+        <fieldset>
+            <legend>Personal Info</legend>
+        <label for="uname">Full Name:</label>
+        <input type="text" name="uname" placeholder="Enter full name"/>
+        <BR>
+        <br>
+
+        <label for="pass">Enter Password:</label>
+        <input type="hidden" name="sessionID" value="111" />
+        <input type="password" name="pass"/>
+        <br>
+        <br>
+
+        <label for="gender">Select Your Gender:</label>
+        <br>
+        <input type="radio" name="gender" value="f" checked/>Female
+        <br>
+        <input type="radio" name="gender" value="m"/>Male
+        <br>
+        <br>
+
+        <label for="hobbies">Select your hobbies:</label>
+        <br>
+        <input type="checkbox" name="hobbies" value="r"/>Reading
+        <br>
+        <input type="checkbox" name="hobbies" value="d"/>Dancing
+        <br>
+        <input type="checkbox" name="hobbies" value="c" checked/>Coding
+        <br>
+        <input type="checkbox" name="hobbies" value="s"/>Singing
+        <br>
+        <input type="checkbox" name="hobbies" value="w"/>Writing
+        <br>
+        <br>
+    </fieldset>
+        <label for="class">Select your class:</label>
+        <br>
+        <select name="class" size="2" multiple >
+            <option value="it">IT</option>
+            <option value="cs">CS</option>
+            <option value="ee">EE</option>
+            <option value="ec">EC</option>
+            <option value="ce">CE</option>
+        </select>
+        <br>
+        <br>
+
+        <label for="age">Enter your age:</label>
+        <input type="number" name="age" min="1" max="150"/>years
+        <br>
+        <br>
+
+        <label for="dob">Enter your DOB:</label>
+        <input type="date" name="dob"/>
+        <br>
+        <br>
+
+        <label for="add">Enter your Address:</label>
+        <textarea name="add" id="" cols="40" rows="4" placeholder="address..."></textarea>
+        <br><br>
+        
+        <datalist id="days">
+            <option>Sunday</option>
+            <option>Saturday</option>
+        </datalist>
+        <input type="text" list="days">
+        <br><br>
+
+        <input type="reset">
+
+        <input type="submit" />
+
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Form</title>
+</head>
+<body bgcolor="lightblue">
+    <h1>
+        Registeration Form
+    </h1>
+   <table>
+    <form name="regForm" method="get" action="ex9_Home.html">
+    <tr>
+        <td>
+            <label for="uname" >Full Name:</label>
+        </td>
+        <td>
+            <input type="text" name="uname" placeholder="Enter full name" required minlength="4" maxlength="10"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="pass">Enter Password:</label>
+        </td>
+        <td>
+            <input type="password" name="pass"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="gender">Select Your Gender:</label>
+        </td>
+        <td>
+            <input type="radio" name="gender" value="f" checked/>Female       
+            <input type="radio" name="gender" value="m"/>Male
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="hobbies">Select your hobbies:</label>
+        </td>
+        <td>
+            <input type="checkbox" name="hobbies" value="r"/>Reading
+            <input type="checkbox" name="hobbies" value="d"/>Dancing
+            <input type="checkbox" name="hobbies" value="c" checked/>Coding
+            <input type="checkbox" name="hobbies" value="s"/>Singing
+            <input type="checkbox" name="hobbies" value="w"/>Writing
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="class">Select your class:</label>
+
+        </td>
+        <td>
+            <select name="class" size="2" multiple >
+                <option value="it">IT</option>
+                <option value="cs">CS</option>
+                <option value="ee">EE</option>
+                <option value="ec">EC</option>
+                <option value="ce">CE</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="age">Enter your age:</label>
+        </td>
+        <td>
+            <input type="number" name="age" min="1" max="150"/>years
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="dob">Enter your DOB:</label>
+        </td>
+        <td>
+            <input type="date" name="dob"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="add">Enter your Address:</label>
+        </td>
+        <td>
+            <textarea name="add" id="" cols="40" rows="4" placeholder="address..."></textarea>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label for="days">Enter day:</label>
+        </td>
+        <td>
+            <datalist id="days">
+                <option>Sunday</option>
+                <option>Saturday</option>
+            </datalist>
+            <input type="text" list="days">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="reset">
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="submit">
+        </td>
+    </tr>
+   </table>
+</form>
+</body>
+</html>

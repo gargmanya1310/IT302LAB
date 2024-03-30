@@ -1,0 +1,29 @@
+body
+{
+    
+    background-image: linear-gradient( to right,rgba(171, 240, 249,0.6),rgba(237, 245, 212,0.6),rgba(231, 171, 239,0.6)),url('images/6.jpg'); 
+    background-color:rgb(239, 245, 115);
+    background-size: cover,cover;
+    background-repeat: repeat,no-repeat;
+}  
+h1
+{
+    font-size: 30px;
+    font-weight: bolder;
+    color: blueviolet;
+    text-align: center;
+    text-shadow: 10px -10px 5px rgba(247, 119, 119,.5); 
+}
+
+p{
+    font-size: 15px;
+    color:rgb(208, 0, 255);
+    text-align: justify;
+    line-height: 50px;
+    /* background-image: linear-gradient( rgb(171, 240, 249),rgb(237, 245, 212),rgb(231, 171, 239));  */
+}
+h2{
+    font-size: 20px;
+    color:rgb(26, 75, 1);
+    text-align:left;
+}

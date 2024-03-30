@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FlexBox</title>
+    <style>
+        .container 
+        {
+            display: flex;
+            flex-direction: row;
+            height: 700px;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: start;
+            align-content: space-evenly;
+
+        }
+        .container div
+        {
+            height: 200px;
+            width:200px;
+            background-color: red;
+            margin: 5px;
+            border:black 2px solid;
+            font-size: 30px;
+            color:white;
+            font-weight: 700;
+        }
+        div{
+            position: relative;
+        }
+
+        div img{
+            height:100%;
+            width:100%;
+            position: absolute;
+            z-index: 10;
+            /* z index is used to show the image or hide it 
+            higher z means near to the user , lower means away or far */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="container" style="left: 400px;"> -->
+        <div class="container">
+            <img src="images/1.jpeg" />
+            <span style="z-index:20" >1</span></div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+    </div>
+</body>
+</html>

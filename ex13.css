@@ -1,0 +1,20 @@
+h1
+{
+    font-size: 30px;
+    text-shadow: 10px -10px 5px rgba(247, 119, 119,.5); /* offset from left,top,right,shadow color*/
+}
+body
+{
+    background-color:rgb(139, 201, 217);
+    text-align: center;
+    /* background-image: url('images/bgs/foil.png'); */
+    background-image: url('images/1.jpeg');
+     background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+p{
+    font-size: 15px;
+    text-align: justify;
+    background-image: linear-gradient( rgb(171, 240, 249),rgb(237, 245, 212),rgb(231, 171, 239)); 
+}
